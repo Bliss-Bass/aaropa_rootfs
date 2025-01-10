@@ -1,2 +1,4 @@
 GRUB_THEME=$(ls -d /tmp/calamares-root-*)/boot/grub/themes/vimix-white-1080p/theme.txt
 GRUB_BACKGROUND=$(ls -d /tmp/calamares-root-*)/boot/grub/themes/vimix-white-1080p/background.png
+GRUB_GFXMODE=1024x768
+GRUB_GFXPAYLOAD_LINUX=auto

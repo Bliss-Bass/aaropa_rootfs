@@ -17,7 +17,7 @@ ln -st /initrd_lib usr/{bin,lib,lib64}
 
 # Copy binaries and libraries
 find_dep() { ldd "$1" | awk '{print $3}' | xargs; }
-for b in mount.ntfs-3g; do
+for b in mount.ntfs-3g dmidecode; do
   b=$(which $b)
   cp -t /initrd_lib/bin $b
   cp -t /initrd_lib/lib $(find_dep "$b")

@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=Install BlissOS
-GenericName=BlissOS Installer
+Name=Install Bass OS
+GenericName=Bass OS Installer
 Keywords=calamares;system;installer;
 TryExec=calamares
 Exec=/usr/bin/calamares
