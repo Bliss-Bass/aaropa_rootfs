@@ -3,7 +3,7 @@
 
 	<!-- The root menu. -->
 	<RootMenu onroot="1" height="22">
-		<Program icon="/etc/bliss/blissos_logo.svg" label="Install BlissOS">calamares</Program>
+		<Program icon="/etc/bliss/blissos_logo.svg" label="Install Bass OS">calamares</Program>
 		<Program icon="x-office-document-symbolic.svg" label="README">l3afpad /etc/bliss/readme.txt</Program>
 	<Separator/>
 		<Program icon="gparted.svg" label="GParted">gparted</Program>
@@ -44,56 +44,56 @@
 		<Width>4</Width>
 		<Height>28</Height>
 		<Corner>8</Corner>
-		<Foreground>#D1C3CB</Foreground>
+		<Foreground>#C4C3D1</Foreground>
 		<Background>#3E3E3E</Background>
-		<Outline>#4E444B</Outline>
+		<Outline>#44464E</Outline>
 		<Opacity>0.5</Opacity>
 		<Active>
-			<Foreground>#EBDFE6</Foreground>
+			<Foreground>#DFE3EB</Foreground>
 			<Background>#212121</Background>
-			<Outline>#9A8D96</Outline>
+			<Outline>#8D929A</Outline>
 			<Opacity>1.0</Opacity>
 		</Active>
 	</WindowStyle>
 	<TrayStyle group="false" list="all">
 		<Font>Sans-10</Font>
-		<Foreground>#EBDFE6</Foreground>
-		<Background>#2E282D</Background>
-		<Outline>#2E282D</Outline>
+		<Foreground>#DFE3EB</Foreground>
+		<Background>#282B2E</Background>
+		<Outline>#282B2E</Outline>
 		<Opacity>0.75</Opacity>
 	</TrayStyle>
 	<PagerStyle>
 		<Corner>8</Corner>
-		<Foreground>#41283F</Foreground>
-		<Background>#3E373C</Background>
-		<Text>#E9C6F0</Text>
+		<Foreground>#283441</Foreground>
+		<Background>#373C3E</Background>
+		<Text>#C6DCF0</Text>
 		<Active>
-			<Foreground>#5D415A</Foreground>
-			<Background>#4F434C</Background>
+			<Foreground>#41535D</Foreground>
+			<Background>#43494F</Background>
 		</Active>
 	</PagerStyle>
 	<MenuStyle>
 		<Font>Sans-10</Font>
-		<Foreground>#EBDFE6</Foreground>
-		<Background>#2E282D</Background>
-		<Outline>#9A8D96</Outline>
+		<Foreground>#DFE3EB</Foreground>
+		<Background>#282B2E</Background>
+		<Outline>#8D929A</Outline>
 		<Corner>16</Corner>
 		<Active>
-			<Foreground>#FFD1F7</Foreground>
-			<Background>#5D415A</Background>
+			<Foreground>#D1EEFF</Foreground>
+			<Background>#41535D</Background>
 		</Active>
 		<Opacity>0.85</Opacity>
 	</MenuStyle>
 	<PopupStyle>
 		<Font>Sans-10</Font>
-		<Foreground>#EBDFE6</Foreground>
+		<Foreground>#DFE3EB</Foreground>
 		<Background>#212121</Background>
-		<Outline>#9A8D96</Outline>
+		<Outline>#8D929A</Outline>
 	</PopupStyle>
 	<TaskListStyle>
 			<Active>
 			<Foreground>#FFFFFF</Foreground>
-				<Background>#72556E</Background>
+				<Background>#556672</Background>
 		</Active>
 	</TaskListStyle>
 
