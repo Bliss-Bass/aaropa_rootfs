@@ -5,7 +5,8 @@ for d in \
   boot/grub \
   boot/efi \
   cdrom \
-  root; do
+  root \
+  source; do
   mkdir -p $d
 done
 
