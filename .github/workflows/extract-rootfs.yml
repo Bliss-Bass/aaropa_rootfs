@@ -9,7 +9,7 @@ on:
       - ceres
       - downstream
     tags:
-      - '*'
+      - 'v*'
   pull_request:
     branches:
       - main

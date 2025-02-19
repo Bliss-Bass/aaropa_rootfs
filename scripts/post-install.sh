@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Copy grub2 theme
-cp -r /usr/share/grub/themes /iso/boot/grub
-mkdir -p /boot/grub/themes /usr/share/grub/themes
+mv /usr/share/grub/themes /iso/boot/grub
+ln -s /cdrom/boot/grub/themes /usr/share/grub
 
 # Generate a grub-rescue iso so we can use it as the base for the iso
 grub-mkrescue \
