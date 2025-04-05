@@ -1,12 +1,23 @@
 #!/bin/bash
 
 # Copy grub2 theme
+if [ ! -d /iso/boot/grub ]; then
 mv /usr/share/grub/themes /iso/boot/grub
 ln -s /cdrom/boot/grub/themes /usr/share/grub
+found_themes="$(find /iso/boot/grub/themes -mindepth 1 -maxdepth 1 -type d -print -quit)"
+elif [ ! -d /boot/grub ]; then
+cp -r /usr/share/grub/themes /boot/grub
+mkdir -p /boot/grub/themes /usr/share/grub/themes
+found_themes="$(find /boot/grub/themes -mindepth 1 -maxdepth 1 -type d -print -quit)"
+else 
+cp -r /usr/share/grub/themes /boot/grub
+mkdir -p /boot/grub/themes /usr/share/grub/themes
+found_themes="$(find /boot/grub/themes -mindepth 1 -maxdepth 1 -type d -print -quit)"
+fi
 
 # Generate a grub-rescue iso so we can use it as the base for the iso
 grub-mkrescue \
-  --themes="$(find /iso/boot/grub/themes -mindepth 1 -maxdepth 1 -type d -print -quit)" \
+  --themes="$found_themes" \
   -o /grub-rescue.iso \
   /iso
 rm -rf /iso
