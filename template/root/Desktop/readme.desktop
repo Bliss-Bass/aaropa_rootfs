@@ -2,7 +2,7 @@
 Type=Application
 Version=1.0
 Name=README
-Exec=sh -c "l3afpad /etc/bliss/readme.txt"
+Exec=/usr/bin/l3afpad /etc/bliss/readme.txt
 Icon=text-x-generic
 Terminal=false
 StartupNotify=true

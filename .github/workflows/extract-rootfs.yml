@@ -64,6 +64,7 @@ jobs:
           sudo chmod 4754 install/usr/lib/dbus-1.0/dbus-daemon-launch-helper
 
           # Create install.sfs
+          sudo rm -rf install/initrd_lib*
           sudo mksquashfs install install.sfs -noappend -comp zstd
           sudo chmod 755 install.sfs
 
