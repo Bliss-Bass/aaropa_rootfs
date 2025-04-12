@@ -238,7 +238,7 @@
 
 	<StartupCommand>
 		pcmanfm --desktop &
-		sleep 3; bash -c /usr/bin/aaropa-calamares
+		sleep 3; calamares
 	</StartupCommand>
 
 </JWM>
